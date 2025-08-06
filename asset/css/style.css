@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+:root {
+    --black: #000000;
+    --white: #fff;
+    --secondary: #F5F5F5;
+}
+
+.container {
+    max-width: 1170px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+.fz-14 {
+    font-size: 14px; 
+}
+
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+
+
+.relative {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+
+.g-5 {
+    gap: 5px;
+}
+
+.g-8 {
+    gap: 8px;
+}
+.g-16 {
+    gap: 16px;
+}
+.g-24 {
+    gap: 24px;
+}
+.g-48 {
+    gap: 48px;
+}
+
+
+header {
+
+    & .promotion {
+        background-color: var(--black);
+        color: var(--white);
+        padding-block: 12px;
+        margin-bottom: 40px;
+    }
+
+    & .logo {
+        font-size: 24px;
+    }
+
+    & .cta-wrapper {
+        & .search-wrapper {
+            border-radius: 4px;
+            padding: 7px 0 7px 20px;
+            & input {
+                padding: 3px;
+                border: none;
+                background-color: transparent;
+                &:focus {
+                    outline: none;
+                }
+
+            }
+            & .loop-icon {
+                position: absolute;
+                right: 16px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        
+    }
+}
