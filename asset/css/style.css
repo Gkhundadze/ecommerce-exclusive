@@ -275,6 +275,12 @@ a {
 
 }
 
+/* mobile viewport navigation START */
+#mobile-nav {
+    display: none;
+}
+/* mobile viewport navigation END */
+
 /* GENERAL CLASSES USED IN MARKUP END */
 /* ------------------------------ */
 /* product card styles START */
@@ -861,6 +867,9 @@ header {
             & .burger-menu {
                 display: block;
             }
+            /* & #mobile-nav {
+                display: block;
+            } */
         }
          & .promotion {
             margin-bottom: 4px;

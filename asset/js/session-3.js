@@ -5,6 +5,7 @@
 
 // 1. .length – აბრუნებს სტრინგის სიგრძეს (სიმბოლოების რაოდენობას).
 // მაგალითი: გამოთვალეთ სიტყვის სიგრძე.
+
 let text = "JavaScript";
 console.log(text.length); // შედეგი: 10
 
@@ -25,6 +26,7 @@ console.log(sentence.indexOf("a")); // შედეგი: 1 (პირველ
 
 // 5. .lastIndexOf(substring) – აბრუნებს substring-ის ბოლო გამოჩენის ინდექსს.
 // მაგალითი: იპოვეთ 'a'-ს ბოლო პოზიცია.
+
 console.log(sentence.lastIndexOf("a")); // შედეგი: 14 (ბოლო 'a' "awesome"-ში)
 
 // 6. .slice(start, end) – ამოჭრის სტრინგის ნაწილს start-დან end-მდე (end არ შედის).
@@ -38,7 +40,7 @@ console.log(fullName.substring(5)); // შედეგი: Doe
 
 // 8. .substr(start, length) – ამოჭრის length რაოდენობის სიმბოლოს start-დან (deprecated, მაგრამ ჯერ კიდევ მუშაობს).
 // მაგალითი: ამოჭერით 4 სიმბოლო.
-console.log(fullName.substr(0, 4)); // შედეგი: John
+// console.log(fullName.substr(0, 4)); // შედეგი: John
 
 // 9. .replace(old, new) – ცვლის old-ს new-ით (მხოლოდ პირველ გამოჩენას, თუ არა RegExp).
 // მაგალითი: შეცვალეთ სიტყვა.
@@ -64,6 +66,9 @@ console.log(word.charAt(0)); // შედეგი: G
 // 13. .charCodeAt(index) – აბრუნებს სიმბოლოს Unicode კოდს მითითებულ ინდექსზე.
 // მაგალითი: მიიღეთ ASCII კოდი.
 console.log(word.charCodeAt(0)); // შედეგი: 71 (G-ის კოდი)
+
+
+
 
 // === მასივის მეთოდები (Array Methods) ===
 
@@ -98,7 +103,8 @@ console.log(arr); // შედეგი: [1, 4]
 // 6. .slice(start, end) – აბრუნებს ახალ მასივს start-დან end-მდე (end არ შედის).
 // მაგალითი: ამოჭერით ნაწილი.
 let original = [1, 2, 3, 4];
-console.log(original.slice(1, 3)); // შედეგი: [2, 3]
+let newArr = original.slice(1, 3)
+console.log(newArr); // შედეგი: [2, 3]
 
 // 7. .concat(array2) – აერთიანებს ორ მასივს ახალ მასივში.
 // მაგალითი: გააერთიანეთ მასივები.
@@ -127,7 +133,8 @@ console.log(doubled); // შედეგი: [2, 4, 6]
 
 // 12. .filter(callback) – ქმნის ახალ მასივს callback-ის მიხედვით გაფილტრული ელემენტებით.
 // მაგალითი: იპოვეთ ლუწი რიცხვები.
-let evens = [1, 2, 3, 4].filter(n => n % 2 === 0);
+let evens = [1, 2, 3, 4]
+evens.filter(n => n % 2 === 0);
 console.log(evens); // შედეგი: [2, 4]
 
 // 13. .reduce(accumulator, current, callback) – აკუმულირებს მასივს ერთ მნიშვნელობად.
@@ -149,9 +156,16 @@ console.log(unsorted); // შედეგი: [1, 2, 3, 4]
 
 // === ობიექტის მეთოდები (Object Methods) ===
 
+
 // 1. Object.keys(obj) – აბრუნებს ობიექტის გასაღებების (keys) მასივს.
+
 // მაგალითი: მიიღეთ გასაღებები.
-let person = { name: "Alice", age: 30 };
+
+let person = { 
+  name: "Alice", 
+  age: 30 
+};
+
 console.log(Object.keys(person)); // შედეგი: ["name", "age"]
 
 // 2. Object.values(obj) – აბრუნებს ობიექტის მნიშვნელობების (values) მასივს.
@@ -166,6 +180,8 @@ console.log(Object.entries(person)); // შედეგი: [["name", "Alice"], 
 // მაგალითი: დაბეჭდეთ თვისებები.
 for (let key in person) {
   console.log(key + ": " + person[key]); // შედეგი: name: Alice, age: 30
+
+  console.log(`${key} : ${person[key]}`); // შედეგი: name: Alice, age: 30
 }
 
 // დამატებითი ოპერაციები ობიექტებზე (არა მეთოდები, მაგრამ სასარგებლო):
@@ -183,7 +199,7 @@ console.log(person); // შედეგი: { name: "Alice", job: "Developer" }
 // === დამატებითი მაგალითები და ამოცანები ===
 
 // პალინდრომის შემოწმება სტრინგზე:
-let palindrome = "radar";
+let palindrome = "radar"; 
 let reversed = palindrome.split("").reverse().join("");
 console.log(palindrome === reversed); // შედეგი: true
 

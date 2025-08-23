@@ -15,3 +15,28 @@ function updateSeconds() {
 
 setInterval(updateSeconds, 1000)
 
+
+
+
+const burgerMenu = document.querySelector('.burger-menu')
+const mobileNav = document.querySelector('#mobile-nav')
+let showingMobileNav = false
+
+burgerMenu.addEventListener('click', () => {
+
+    if(showingMobileNav) {
+        mobileNav.style.display = 'none'
+        showingMobileNav = false
+        
+        // mobileNav.classList.remove('show')
+    } else {
+        mobileNav.style.display = 'block'
+        showingMobileNav = true
+
+        // mobileNav.classList.add('show')
+
+    }
+    console.log(showingMobileNav);
+    
+})
+
