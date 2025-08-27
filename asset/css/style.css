@@ -729,7 +729,55 @@ header {
 
 /* services section END */
 
+/* cart-page START */
+.cart-main-table {
+    & th, td {
+  padding: 30px;
+        text-align: left;
+}
+ border-spacing: 40px;
+    & .cart-item {
+        & .image {
+            width: 54px;
+            cursor: pointer;
+            &:hover {
+                & button {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+            & img {
+                width: 100%;
+                display: block;
+            }
+            & button {
+                position: absolute;
+                top: -12px;
+                left: -12px;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                visibility: hidden;
+                opacity: 0;
+                transition: .3s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        & .title {
 
+        }
+        & input[type="number"] {
+            width: 72px;
+            height: 44px;
+            padding: 6px 12px;
+            border-radius: 4px;
+        }
+    }
+}
+
+/* cart-page END */
 
 @media (max-width: 1315px) {
     .browse-category {
