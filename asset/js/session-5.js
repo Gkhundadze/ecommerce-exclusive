@@ -1,3 +1,4 @@
+import greet, {nums} from './someModule.js';
 
 /* ==================================================
    1) ფუნქციების სკოპინგი და კლოუჟერები
@@ -15,7 +16,6 @@ function test() {
     console.log(a); // ხედავს 10-ს
 }
 test();
-
 // 2) Function Scope
 
 // var არის function-scoped → ჩანს მთელ ფუნქციაში, თუნდაც ბლოკში გამოცხადდეს.
@@ -143,7 +143,7 @@ function sum(...nums) { // ყველაფერი გადმოედგ�
 console.log('sum(1,2,3,4):', sum(1, 2, 3, 4)); // 10
 
 // Spread ემატება ელემენტებს როგორც ინდივიდუალურ არგუმენტებს
-const nums = [10, 20, 30];
+// const nums = [10, 20, 30];
 console.log('sum(...nums):', sum(...nums)); // 60
 
 
@@ -183,7 +183,12 @@ console.log('sum(...nums):', sum(...nums)); // 60
    4) async JavaScript: Promises, async/await
    ==================================================*/
 
+
+
+
 // პატარა მაგალითი (fakeFetch) რომელიც მოდელირებას უკეთებს ქსელურ მოთხოვნას
+
+
 function fakeFetch(url, delay = 500, succeed = true) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -208,6 +213,8 @@ fakeFetch('/api/user', 300)
     .catch(err => {
         console.error('promise error:', err);
     });
+
+
 
 // async / await — უფრო სუფთა სინტაქსი
 async function getUserAndPosts() {
@@ -246,7 +253,7 @@ loadDashboard();
 
 // async/await
 async function loadManyUrls(urls) {
-    const promises = urls.map(u => fakeFetch(u, 200, Math.random() > 0.3));
+    const promises = urls.map(u => fakeFetch(u, 200, true));
     const results = await Promise.allSettled(promises);
     console.log('loadManyUrls results:', results);
     results.forEach((r, i) => {

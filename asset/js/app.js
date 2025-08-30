@@ -52,3 +52,18 @@ burgerMenu.addEventListener('click', () => {
   // Update every second
   const interval = setInterval(updateCountdown, 1000);
   updateCountdown(); // Initial call
+
+
+
+
+  fetch('https://dummyjson.com/products')
+.then(res => {
+  return res.json()
+})
+.then((data) => {
+  console.log('Fetched products:', data);
+  console.log('Fetched products:', data.products);
+})
+.catch(err => {
+  console.error('Error fetching products:', err);
+});
