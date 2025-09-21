@@ -17,6 +17,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+
+
+
+    <!-- swiper -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
     <!-- custom styles -->
     <link rel="stylesheet" href="asset/css/style.css">
 </head>
@@ -823,7 +834,12 @@
                     </div>
                 </div>
                 <div class="products-wrapper flex align-center flex-wrap g-30">
-                    <div class="card">
+                     <!-- Slider main container -->
+                <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="card swiper-slide">
                         <div class="card-header relative flex justify-center align-center">
                             <div class="wishlist flex justify-center align-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -895,7 +911,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card swiper-slide">
                         <div class="card-header relative flex justify-center align-center">
                             <div class="wishlist flex justify-center align-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -967,7 +983,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card swiper-slide">
                         <div class="card-header relative flex justify-center align-center">
                             <div class="wishlist flex justify-center align-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -1039,7 +1055,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card swiper-slide">
                         <div class="card-header relative flex justify-center align-center">
                             <div class="wishlist flex justify-center align-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -1111,7 +1127,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card swiper-slide">
                         <div class="card-header relative flex justify-center align-center">
                             <div class="wishlist flex justify-center align-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -1183,7 +1199,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card swiper-slide">
                         <div class="card-header relative flex justify-center align-center">
                             <div class="wishlist flex justify-center align-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -1255,7 +1271,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card swiper-slide">
                         <div class="card-header relative flex justify-center align-center">
                             <div class="wishlist flex justify-center align-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -1327,7 +1343,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card swiper-slide">
                         <div class="card-header relative flex justify-center align-center">
                             <div class="wishlist flex justify-center align-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -1399,6 +1415,19 @@
                             </div>
                         </div>
                     </div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+                    
                 </div>
                 <div class="view-all flex justify-center">
                     <a href="#">View All Products</a>
@@ -1483,12 +1512,45 @@
         </section>
     </main>
     <footer>
-        footer
+
+       footer
+
     </footer>
 
 
 
     <script src="asset/js/app.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            enabled: false,
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            enabled: false,
+        },
+        });
+    </script>
     <!-- <script src="asset/js/session-2.js"></script> -->
     <!-- <script src="asset/js/session-3.js"></script> -->
     <!-- <script src="asset/js/session-4.js"></script> -->
