@@ -17,7 +17,6 @@ function loadCart() {
 // Save cart to localStorage
 function saveCart() {
     localStorage.setItem('cartItems', JSON.stringify(cart));
-    console.log('Saved cart to localStorage:', cart);
 }
 
 // Initialize cart on page load
@@ -188,8 +187,8 @@ function renderFlashSaleProducts(products) {
     if (isInCart) {
       addToCartBtn.disabled = true;
     }
-
-    cardBody.append(title, pricesDiv, reviewsWrapper, addToCartBtn);
+    cardHeader.append(addToCartBtn)
+    cardBody.append(title, pricesDiv, reviewsWrapper);
     card.append(cardHeader, cardBody);
     productsWrapper.appendChild(card);
   });
