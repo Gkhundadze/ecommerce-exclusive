@@ -574,7 +574,6 @@ header {
         margin-top: 60px;
         ul {
             & a {
-                display: inline-block;
                 width: 170px;
                 height: 145px;
                 transition-duration: .3s;
