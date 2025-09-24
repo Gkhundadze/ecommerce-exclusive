@@ -10,7 +10,6 @@ function loadCart() {
     const savedCart = localStorage.getItem('cartItems');
     if (savedCart) {
         cart = JSON.parse(savedCart);
-        console.log('Loaded cart from localStorage:', cart);
     }
 }
 
@@ -30,7 +29,6 @@ burgerMenu.addEventListener('click', () => {
         mobileNav.style.display = 'block'
         showingMobileNav = true
     }
-    console.log(showingMobileNav);
 })
 
 // Set the target date/time for the countdown
@@ -200,6 +198,7 @@ function renderFlashSaleProducts(products) {
     cardHeader.append(addToCartBtn)
     cardBody.append(title, pricesDiv, reviewsWrapper);
     card.append(cardHeader, cardBody);
+    productsWrapper.style.height = 'auto'; // Ensure wrapper height adjusts
     productsWrapper.appendChild(card);
   });
 }
