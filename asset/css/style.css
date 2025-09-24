@@ -570,11 +570,10 @@ header {
 /* browse by category section START */
 .browse-category {
     padding-bottom: 70px;
-
+    min-height: 300px;
     & .categories-navigation {
         margin-top: 60px;
         ul {
-            min-height: 140px;
             & a {
             width: 170px;
             height: 145px;
