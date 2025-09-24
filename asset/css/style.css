@@ -570,15 +570,14 @@ header {
 /* browse by category section START */
 .browse-category {
     padding-bottom: 70px;
-    min-height: 300px;
     & .categories-navigation {
         margin-top: 60px;
         ul {
             & a {
-            width: 170px;
-            height: 145px;
-            transition-duration: .3s;
-
+                display: inline-block;
+                width: 170px;
+                height: 145px;
+                transition-duration: .3s;
             &:hover {
                 background-color: var(--secondary-2);
                 color: var(--white);
