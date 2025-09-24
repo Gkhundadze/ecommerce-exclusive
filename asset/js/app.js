@@ -69,8 +69,13 @@ updateCountdown();
 
 const productsWrapper = document.querySelector('.products-wrapper');
 
+
+
+
 // Fetch products from DummyJSON
-fetch('https://dummyjson.com/products')
+
+document.addEventListener("DOMContentLoaded", () => {
+  fetch('https://dummyjson.com/products')
   .then(res => res.json())
   .then(data => {
     const products = data.products.slice(0, 8);
@@ -79,6 +84,10 @@ fetch('https://dummyjson.com/products')
   .catch(err => {
     console.error('Error fetching products:', err);
   });
+});
+
+
+
 
 function renderFlashSaleProducts(products) {
   productsWrapper.innerHTML = '';
