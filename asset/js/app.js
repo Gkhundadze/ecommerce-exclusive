@@ -115,6 +115,7 @@ function renderFlashSaleProducts(products) {
     `;
 
     const productImg = document.createElement('img');
+    productImg.loading = 'lazy';
     productImg.src = product.thumbnail;
     productImg.alt = product.title;
 

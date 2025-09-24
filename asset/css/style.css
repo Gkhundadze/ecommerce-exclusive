@@ -279,6 +279,7 @@ a {
 #mobile-nav {
     display: none;
 }
+
 /* mobile viewport navigation END */
 
 /* GENERAL CLASSES USED IN MARKUP END */
@@ -338,7 +339,7 @@ a {
             }
         }
 
-        & img {}
+        /* & img {} */
 
         .add-to-cart {
             position: absolute;
@@ -358,6 +359,7 @@ a {
             cursor: pointer;
             border-radius: 4px;
         }
+
         &:hover {
             .add-to-cart {
                 visibility: visible;
@@ -462,6 +464,7 @@ header {
             }
 
         }
+
         & .burger-menu {
             display: none;
             cursor: pointer;
@@ -531,7 +534,7 @@ header {
             }
         }
 
-        & .image-wrapper {}
+        /* & .image-wrapper {} */
     }
 }
 
@@ -597,7 +600,7 @@ header {
 }
 
 /* browse by category section END */
-.best-selling-products {}
+/* .best-selling-products {} */
 
 /* ------------------------------ */
 /* offers section START */
@@ -607,8 +610,10 @@ header {
     margin-top: 140px;
     margin-bottom: 70px;
     border-radius: 4px;
-    & .content {    
+
+    & .content {
         color: var(--white);
+
         &>span {
             color: var(--green);
         }
@@ -770,25 +775,29 @@ header {
 
 /* cart-page START */
 .cart-main-table {
-    & th, td {
-  padding: 30px;
+    & th,
+    td {
+        padding: 30px;
         text-align: left;
-}
- border-spacing: 40px;
+    }
+
     & .cart-item {
         & .image {
             width: 54px;
             cursor: pointer;
+
             &:hover {
                 & button {
                     visibility: visible;
                     opacity: 1;
                 }
             }
+
             & img {
                 width: 100%;
                 display: block;
             }
+
             & button {
                 position: absolute;
                 top: -12px;
@@ -799,14 +808,14 @@ header {
                 visibility: hidden;
                 opacity: 0;
                 transition: .3s;
+
                 &:hover {
                     transform: scale(1.1);
                 }
             }
         }
-        & .title {
 
-        }
+        /* & .title {} */
         & input[type="number"] {
             width: 72px;
             height: 44px;
@@ -817,195 +826,3 @@ header {
 }
 
 /* cart-page END */
-
-@media (max-width: 1315px) {
-    .browse-category {
-        & .categories-navigation {
-            & ul {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-        }
-    }
-
-        .offer {
-            padding: 50px 42px;
-            & .content {
-                & h2 {
-                    font-size: 36px;
-                }
-            }
-            & .image-wrapper {
-                & img {
-                    width: 450px;
-                }
-            }
-        }
-        .our-products {
-
-            & .products-wrapper {
-                justify-content: center;
-            }
-        }
-}
-@media (max-width: 1060px) {
-    .welcome {
-
-        & .welcome-wrapper {
-            margin-left: 28px;
-            & .text-content {
-                padding-left: 36px;
-            }
-            & .image-wrapper {
-                display: flex;
-                align-items: center;
-                & img {
-                    width: 400px;
-                }
-            }
-        }
-    }
-    
-}
-@media (max-width: 992px) {
-    .container {
-        width: 96%;
-    }
-    .fz-36 {
-        font-size: 28px;
-    }
-    .view-all {
-        margin-block: 40px;
-    }
-    header {
-        & .promotion {
-            margin-bottom: 16px;
-        }
-        & .header-wrapper {
-            & nav {
-
-                & ul {
-                    gap: 36px;
-                }
-            }
-        }
-    }
-    .welcome {
-
-        & .welcome-wrapper {
-            margin-left: 24px;
-            & .text-content {
-                padding-left: 28px;
-            }
-            & .image-wrapper {
-                & img {
-                    width: 350px;
-                }
-            }
-        }
-    }
-    .flash-sales {
-        & .products-wrapper {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    }
-    .best-selling-products {
-        & .products-wrapper {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    }
-    .offer {
-        margin-top: 100px;
-        margin-bottom: 50px;
-        padding: 36px;
-        & .offers-wrapper {
-            flex-direction: column;
-            & .content {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                & a {
-                    padding: 12px 36px;
-                }
-            }
-
-            & .image-wrapper {
-                display: flex;
-                justify-content: center;
-                & img {
-                    /* width: 450px; */
-                }
-            }
-        }
-    }
-}
-@media (max-width: 940px) {
-    header {
-        padding-bottom: 4px;
-        & .header-wrapper {
-            & nav {
-                display: none;
-            }
-            & .cta-wrapper {
-                display: none;
-            }
-            & .burger-menu {
-                display: block;
-            }
-            /* & #mobile-nav {
-                display: block;
-            } */
-        }
-         & .promotion {
-            margin-bottom: 4px;
-        }
-    }
-    .welcome {
-        & .welcome-wrapper {
-            margin-top: 24px;
-            & .text-content {
-                & h2 {
-                    font-size: 36px;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .view-all {
-        margin-block: 30px ;
-    }
-
-    .browse-category {
-        padding-bottom: 50px;
-    }
-    .offer {
-        margin-top: 80px;
-        margin-bottom: 44px;
-        padding: 28px;
-    }
-    .welcome {
-        margin-bottom: 20px;
-        & .welcome-inner-wrapper {
-            flex-direction: column;
-            & aside {
-                width: auto;
-                border-right: none;
-                padding-top: 20px;
-                padding-right: unset;
-            }
-            & .welcome-wrapper {
-                margin-left: unset;
-            }
-        }
-    }
-    .flash-sales {
-        margin-bottom: 20px;
-    }
-    .best-selling-products {
-        margin-bottom: 20px;
-    }
-}

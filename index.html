@@ -3,33 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Shop exclusive deals on electronics, fashion, and more">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exclusive - Ecommerce</title>
     <!-- poppins -->
-    <link rel="preload" href="https://fonts.googleapis.com">
-    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"  href="https://fonts.googleapis.com">
+    <link rel="preconnect"  href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+        rel="preconnect">
     <!-- inter -->
-    <link rel="preload" href="https://fonts.googleapis.com">
-    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"  href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="preload">
-
-
+        rel="preconnect">
 
     <!-- swiper -->
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="asset/css/swiper-bundle.min.css"/>
 
-    <script async src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
 
     <!-- custom styles -->
     <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
 </head>
 
 <body>
@@ -61,7 +58,7 @@
                         <a href="index.html" class="logo inter-bold capitalize">
                             exclusive
                         </a>
-                        <nav>
+                        <nav aria-label="Main navigation">
                             <ul class="flex g-48 capitalize poppins-regular">
                                 <li>
                                     <a class="border-bottom" href="index.html">home</a>
@@ -125,7 +122,7 @@
                             </svg>
                         </div>
                     </div>
-                    <nav id="mobile-nav">
+                    <nav aria-label="Mobile navigation" id="mobile-nav">
                         <ul class="flex direction-column align-center g-48 capitalize poppins-regular">
                             <li>
                                 <a class="border-bottom" href="index.html">home</a>
@@ -151,7 +148,7 @@
             <div class="container">
                 <div class="welcome-inner-wrapper flex">
                     <aside class="border-right">
-                        <nav>
+                        <nav aria-label="Categories">
                             <ul>
                                 <li class="flex align-center justify-between">
                                     <a href="#">Woman’s Fashion</a>
@@ -198,7 +195,7 @@
                     <div class="welcome-wrapper bg-black flex justify-between">
                         <div class="text-content">
                             <div class="flex align-center g-24">
-                                <img src="asset/img/icons/apple.svg" alt="apple logo">
+                                <img fetchpriority="high" width="40" height="40" loading="lazy" src="asset/img/icons/apple.svg" alt="apple logo">
                                 <h3>iPhone 14 Series</h3>
                             </div>
                             <h2>Up to 10% off Voucher</h2>
@@ -212,7 +209,7 @@
                             </div>
                         </div>
                         <div class="image-wrapper">
-                            <img class="block" src="asset/img/welcome/iphone.webp" alt="iphone 14">
+                            <img fetchpriority="high" class="block" src="asset/img/welcome/iphone.webp" alt="iphone 14">
                         </div>
                     </div>
                 </div>
@@ -330,7 +327,7 @@
                         </div>
                     </div>
                 </div>
-                <nav class="categories-navigation">
+                <nav aria-label="Categories" class="categories-navigation">
                     <ul class="flex g-30">
                         <li>
                             <a href="#" class="flex direction-column justify-center align-center g-16 border-bottom border-left border-right border-top">
@@ -496,7 +493,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <img class="block" src="asset/img/best-selling/north-coat.png" alt="havic controller">
+                            <img loading="lazy" class="block" src="asset/img/best-selling/north-coat.png" alt="havic controller">
                         </div>
                         <div class="card-body">
                             <h3>The north coat</h3>
@@ -568,7 +565,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <img class="block" src="asset/img/best-selling/gucci-bag.png" alt="havic controller">
+                            <img loading="lazy" class="block" src="asset/img/best-selling/gucci-bag.png" alt="havic controller">
                         </div>
                         <div class="card-body">
                             <h3>Gucci duffle bag</h3>
@@ -640,7 +637,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <img class="block" src="asset/img/best-selling/liquid-pc-cooler.png" alt="havic controller">
+                            <img loading="lazy" class="block" src="asset/img/best-selling/liquid-pc-cooler.png" alt="havic controller">
                         </div>
                         <div class="card-body">
                             <h3>RGB liquid CPU Cooler</h3>
@@ -712,7 +709,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <img class="block" src="asset/img/best-selling/small-book-self.png" alt="havic controller">
+                            <img loading="lazy" class="block" src="asset/img/best-selling/small-book-self.png" alt="havic controller">
                         </div>
                         <div class="card-body">
                             <h3>Small BookSelf</h3>
@@ -803,7 +800,7 @@
                         </defs>
                     </svg>
 
-                    <img src="asset/img/offer/jbl-boombox-2.webp" alt=" jbl boombox 2">
+                    <img loading="lazy" src="asset/img/offer/jbl-boombox-2.webp" alt=" jbl boombox 2">
                 </div>
             </div>
             </section>
@@ -819,13 +816,15 @@
                     <h2 class="fz-36">Explore Our Products</h2>
                 
                     <div class="carousel-navigation flex g-8">
-                        <div class="flex align-center justify-center pointer">
+                        <!-- prev button -->
+                        <div id="prev-button" class="flex align-center justify-center pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M11 5L4 12L11 19M4 12H20" stroke="black" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
                         </div>
-                        <div class="flex align-center justify-center pointer">
+                        <!-- next button -->
+                        <div id="next-button" class="flex align-center justify-center pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M3.5 12H20M20 12L13 5M20 12L13 19" stroke="black" stroke-width="1.5" stroke-linecap="round"
                                     stroke-linejoin="round" />
@@ -863,7 +862,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <img class="block" src="asset/img/our-products/dog-food.png" alt="Breed Dry Dog Food">
+                            <img loading="lazy" class="block" src="asset/img/our-products/dog-food.png" alt="Breed Dry Dog Food">
                         </div>
                         <div class="card-body">
                             <h3>Breed Dry Dog Food</h3>
@@ -935,7 +934,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <img class="block" src="asset/img/our-products/canon-eos.png" alt="CANON EOS DSLR Camera">
+                            <img loading="lazy" class="block" src="asset/img/our-products/canon-eos.png" alt="CANON EOS DSLR Camera">
                         </div>
                         <div class="card-body">
                             <h3>CANON EOS DSLR Camera</h3>
@@ -1007,7 +1006,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <img class="block" src="asset/img/our-products/asus-fhd-gaming-laprop.png" alt="ASUS FHD Gaming Laptop">
+                            <img loading="lazy" class="block" src="asset/img/our-products/asus-fhd-gaming-laprop.png" alt="ASUS FHD Gaming Laptop">
                         </div>
                         <div class="card-body">
                             <h3>ASUS FHD Gaming Laptop</h3>
@@ -1079,7 +1078,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <img class="block" src="asset/img/our-products/curology-set.png" alt="Curology Product Set ">
+                            <img loading="lazy" class="block" src="asset/img/our-products/curology-set.png" alt="Curology Product Set ">
                         </div>
                         <div class="card-body">
                             <h3>Curology Product Set </h3>
@@ -1151,7 +1150,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <img class="block" src="asset/img/our-products/kids-electric-car.png" alt="Kids Electric Car">
+                            <img loading="lazy" class="block" src="asset/img/our-products/kids-electric-car.png" alt="Kids Electric Car">
                         </div>
                         <div class="card-body">
                             <h3>Kids Electric Car</h3>
@@ -1223,7 +1222,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <img class="block" src="asset/img/our-products/jz-zoom-soccer-cleats.png" alt="Jr. Zoom Soccer Cleats">
+                            <img loading="lazy" class="block" src="asset/img/our-products/jz-zoom-soccer-cleats.png" alt="Jr. Zoom Soccer Cleats">
                         </div>
                         <div class="card-body">
                             <h3>Jr. Zoom Soccer Cleats</h3>
@@ -1295,7 +1294,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <img class="block" src="asset/img/our-products/shooter-usb-gamepad.png" alt="GP11 Shooter USB Gamepad">
+                            <img loading="lazy" class="block" src="asset/img/our-products/shooter-usb-gamepad.png" alt="GP11 Shooter USB Gamepad">
                         </div>
                         <div class="card-body">
                             <h3>GP11 Shooter USB Gamepad</h3>
@@ -1367,7 +1366,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <img class="block" src="asset/img/our-products/satin-jacket.png" alt="Quilted Satin Jacket">
+                            <img loading="lazy" class="block" src="asset/img/our-products/satin-jacket.png" alt="Quilted Satin Jacket">
                         </div>
                         <div class="card-body">
                             <h3>Quilted Satin Jacket</h3>
@@ -1482,7 +1481,7 @@
                 <div class="services-wrapper flex justify-center align-center">
                     <article class="service flex direction-column align-center justify-center g-24">
                         <div class="head">
-                            <img src="asset/img/services/fast-delivery.png" alt="fast delivery">
+                            <img loading="lazy" src="asset/img/services/fast-delivery.png" alt="fast delivery">
                         </div>
                         <div class="body">
                             <h6 class="poppins-semibold fz-20">FREE AND FAST DELIVERY</h6>
@@ -1491,7 +1490,7 @@
                     </article>
                     <article class="service flex direction-column align-center justify-center g-24">
                         <div class="head">
-                            <img src="asset/img/services/customer-support.png" alt="customer support 24/7">
+                            <img loading="lazy" src="asset/img/services/customer-support.png" alt="customer support 24/7">
                         </div>
                         <div class="body">
                             <h6 class="poppins-semibold fz-20">24/7 CUSTOMER SERVICE</h6>
@@ -1500,7 +1499,7 @@
                     </article>
                     <article class="service flex direction-column align-center justify-center g-24">
                         <div class="head">
-                            <img src="asset/img/services/money-back.png" alt="MONEY BACK GUARANTEE">
+                            <img loading="lazy" src="asset/img/services/money-back.png" alt="MONEY BACK GUARANTEE">
                         </div>
                         <div class="body">
                             <h6 class="poppins-semibold fz-20">MONEY BACK GUARANTEE</h6>
@@ -1518,7 +1517,7 @@
     </footer>
 
 
-
+    <script src="asset/js/swiper/swiper-bundle.min.js"></script>
     <script src="asset/js/app.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
@@ -1540,8 +1539,8 @@
         },
         // Navigation arrows
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '#next-button',
+            prevEl: '#prev-button',
         },
 
         // And if we need scrollbar
