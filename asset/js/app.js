@@ -198,8 +198,9 @@ function renderFlashSaleProducts(products) {
     cardHeader.append(addToCartBtn)
     cardBody.append(title, pricesDiv, reviewsWrapper);
     card.append(cardHeader, cardBody);
-    productsWrapper.style.height = 'auto'; // Ensure wrapper height adjusts
     productsWrapper.appendChild(card);
+    productsWrapper.style.height = 'auto'; // Ensure wrapper height adjusts
+    document.body.style.height = 'auto'; // Ensure body height adjusts
   });
 }
 
