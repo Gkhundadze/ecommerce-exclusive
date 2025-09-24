@@ -573,8 +573,9 @@ header {
 
     & .categories-navigation {
         margin-top: 60px;
-
-        & a {
+        ul {
+            min-height: 140px;
+            & a {
             width: 170px;
             height: 145px;
             transition-duration: .3s;
@@ -595,6 +596,8 @@ header {
                 }
             }
         }
+        }
+        
     }
 
 }
