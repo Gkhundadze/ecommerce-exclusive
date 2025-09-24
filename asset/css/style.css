@@ -27,6 +27,15 @@ body{
     --green: #00FF66;
 }
 
+
+.skeleton {
+  width: 270px;
+  height: 320px;
+  background: #eee;
+  border-radius: 6px;
+  animation: pulse 1.5s infinite;
+}
+
 /* GENERAL CLASSES USED IN MARKUP START */
 /* ------------------------------ */
 .container {
@@ -830,3 +839,12 @@ header {
 }
 
 /* cart-page END */
+
+
+
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
